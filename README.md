@@ -4,20 +4,7 @@ This is the software development kit (SDK) for [ctrlX AUTOMATION](https://www.ct
 
 Browse through the manual via: [ctrlX AUTOMATION Software Development Kit](https://boschrexroth.github.io/ctrlx-automation-sdk)
 
-## Important directions for use
-
-### General Terms of Use
-
-In order to download and use the binary packages of the ctrlX AUTOMATION Software Development Kit you have to accept the [Terms and Conditions for the Provision of Products of Bosch Rexroth AG Free of Charge](https://dc-corp.resource.bosch.com/media/xc/homepage/TC_for_provision_of_products_free_of_charge.pdf)
-
-### Areas of use and application
-
-The content (e.g. source code and related documents) of this repository is intended to be used for configuration, parameterization, programming or diagnostics in combination with selected Bosch Rexroth ctrlX AUTOMATION devices.
-Additionally, the specifications given in the "Areas of Use and Application" for ctrlX AUTOMATION devices used with the content of this repository do also apply.
-
-### Unintended use
-
-Any use of the source code and related documents of this repository in applications other than those specified above or under operating conditions other than those described in the documentation and the technical specifications is considered as "unintended". Furthermore, this software must not be used in any application areas not expressly approved by Bosch Rexroth.
+<span style="color:red">This is a fork with custom changes/fixes, see [https://github.com/boschrexroth/ctrlx-automation-sdk](https://github.com/boschrexroth/ctrlx-automation-sdk) for the original code!</span>
 
 ## Installation of the App Build Environment
 
@@ -31,6 +18,8 @@ If your ctrlX App Build Environment is running, you can log in and install the c
 
 __These installation steps are required on both an App Build Environment and an Ubuntu Server or Desktop System.__
 
+<span style="color:red">The following instructions seem to only only work, if the commands are executed from the users root folder (`/home/boschrexroth/`)! Do not install in a subfolder, else the datalayer .deb package install fails.</span>
+
 ### Clone and Install the ctrlX AUTOMATION SDK
 
 Start a console session, change to your destination directory and enter:
@@ -38,6 +27,8 @@ Start a console session, change to your destination directory and enter:
 	wget https://raw.githubusercontent.com/boschrexroth/ctrlx-automation-sdk/main/scripts/clone-install-sdk.sh && chmod a+x *.sh && ./clone-install-sdk.sh
 
 As a result, your local copy of the github repo is stored within the directory __ctrlx-automation-sdk/__
+
+<span style="color:red">NOTE: The script will ask for the github tag to use for installing - enter the version as shown in the list, e.g. `2.6.7`, then hit enter (also for the next question)</span> 
 
 ### Install required Debian packages
 
@@ -78,6 +69,21 @@ For nodejs samples:
 	install-nodejs-npm.sh
 
 Overview of all scripts: [Description of the scripts](scripts/README.md)
+
+## Important directions for use
+
+### General Terms of Use
+
+In order to download and use the binary packages of the ctrlX AUTOMATION Software Development Kit you have to accept the [Terms and Conditions for the Provision of Products of Bosch Rexroth AG Free of Charge](https://dc-corp.resource.bosch.com/media/xc/homepage/TC_for_provision_of_products_free_of_charge.pdf)
+
+### Areas of use and application
+
+The content (e.g. source code and related documents) of this repository is intended to be used for configuration, parameterization, programming or diagnostics in combination with selected Bosch Rexroth ctrlX AUTOMATION devices.
+Additionally, the specifications given in the "Areas of Use and Application" for ctrlX AUTOMATION devices used with the content of this repository do also apply.
+
+### Unintended use
+
+Any use of the source code and related documents of this repository in applications other than those specified above or under operating conditions other than those described in the documentation and the technical specifications is considered as "unintended". Furthermore, this software must not be used in any application areas not expressly approved by Bosch Rexroth.
 
 ## License
 
