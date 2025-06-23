@@ -8,7 +8,7 @@ Browse through the manual via: [ctrlX AUTOMATION Software Development Kit](https
 > This is a fork with custom changes/fixes, see [https://github.com/boschrexroth/ctrlx-automation-sdk](https://github.com/boschrexroth/ctrlx-automation-sdk) for the original code!
 
 > [!WARNING]
-> The SDK seems to not easily work on `Ubuntu 24`, so only use it on `Ubuntu 22.04` (even though this is outdated). Even though the [official documentation here](https://boschrexroth.github.io/ctrlx-automation-sdk/latest/setup_windows_virtualbox_ubuntu.html) explicitely references `Ubuntu 22.04`, the instructions listed there only partially work. See the comments below for hints on how to fix.
+> The SDK seems to not easily work on `Ubuntu 24`, so only use it on `Ubuntu 22.04`. Even though the [official documentation here](https://boschrexroth.github.io/ctrlx-automation-sdk/latest/setup_windows_virtualbox_ubuntu.html) explicitely references `Ubuntu 22.04`, the instructions listed there only partially work. See the comments below for hints on how to fix.
 
 ## Installation of the App Build Environment
 
@@ -67,10 +67,10 @@ For go samples:
 	install-go.sh
 
 > [!WARNING]  
-> The following instructions seem to not work for Ubuntu 22.04, as the script downloads a debian package, which breaks the Ubuntu 22 probided packages. Here is how to install the `dotnet 8.0.411` framework and sdk: [Install DotNet 8 for Ubuntu 22](https://learn.microsoft.com/de-de/dotnet/core/install/linux-ubuntu-install?tabs=dotnet8&pivots=os-linux-ubuntu-2204).
-> To install:
->    sudo apt-get install -y dotnet-sdk-8.0 aspnetcore-runtime-8.0 dotnet-runtime-8.0
->
+> The following instructions seem to not work for Ubuntu 22.04, as the script downloads a debian package, which breaks the Ubuntu 22 probided packages. Here is how to officially install the `dotnet 8.0.411` framework and sdk: [Install DotNet 8 for Ubuntu 22](https://learn.microsoft.com/de-de/dotnet/core/install/linux-ubuntu-install?tabs=dotnet8&pivots=os-linux-ubuntu-2204).
+> Use the following instead:
+	
+	sudo apt-get install -y dotnet-sdk-8.0 aspnetcore-runtime-8.0 dotnet-runtime-8.0
 
 For .NET samples:
 
