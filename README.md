@@ -4,7 +4,8 @@ This is the software development kit (SDK) for [ctrlX AUTOMATION](https://www.ct
 
 Browse through the manual via: [ctrlX AUTOMATION Software Development Kit](https://boschrexroth.github.io/ctrlx-automation-sdk)
 
-$${\color{red}This is a fork with custom changes/fixes, see [https://github.com/boschrexroth/ctrlx-automation-sdk](https://github.com/boschrexroth/ctrlx-automation-sdk) for the original code!}$$
+> [!NOTE]  
+> This is a fork with custom changes/fixes, see [https://github.com/boschrexroth/ctrlx-automation-sdk](https://github.com/boschrexroth/ctrlx-automation-sdk) for the original code!
 
 ## Installation of the App Build Environment
 
