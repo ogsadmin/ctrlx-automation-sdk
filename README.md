@@ -9,6 +9,8 @@ Browse through the manual via: [ctrlX AUTOMATION Software Development Kit](https
 
 > [!WARNING]
 > The SDK seems to not easily work on `Ubuntu 24`, so only use it on `Ubuntu 22.04`. Even though the [official documentation here](https://boschrexroth.github.io/ctrlx-automation-sdk/latest/setup_windows_virtualbox_ubuntu.html) explicitely references `Ubuntu 22.04`, the instructions listed there only partially work. See the comments below for hints on how to fix.
+>
+> A good source of information is the [ctrlx-automation-sdk/blob/main/scripts/environment/cloud-config](https://github.com/ogsadmin/ctrlx-automation-sdk/blob/main/scripts/environment/cloud-config) file in the repo, check additionally (e.g. for the list of packages to install).
 
 ## Installation of the App Build Environment
 
