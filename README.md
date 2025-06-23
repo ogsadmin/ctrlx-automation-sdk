@@ -72,7 +72,7 @@ For go samples:
 	
 	sudo apt-get install -y dotnet-sdk-8.0 aspnetcore-runtime-8.0 dotnet-runtime-8.0
 
-For .NET samples:
+For .NET samples (**MIGHT NEED TO REINSTALL DOTNET AS SHOWN ABOVE**):
 
 	install-dotnet-sdk.sh
 
