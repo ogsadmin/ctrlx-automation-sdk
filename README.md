@@ -67,7 +67,7 @@ For go samples:
 	install-go.sh
 
 > [!WARNING]  
-> The following instructions seem to not work for Ubuntu 22.04, as the script downloads a debian package, which breaks the Ubuntu 22 probided packages. Here is how to officially install the `dotnet 8.0.411` framework and sdk: [Install DotNet 8 for Ubuntu 22](https://learn.microsoft.com/de-de/dotnet/core/install/linux-ubuntu-install?tabs=dotnet8&pivots=os-linux-ubuntu-2204).
+> The `install-dotnet-sdk.sh` script seem to not work for Ubuntu 22.04, as the script downloads a debian package, which breaks the Ubuntu 22 provided packages. Here is how to officially install the `dotnet 8.0.411` framework and sdk: [Install DotNet 8 for Ubuntu 22](https://learn.microsoft.com/de-de/dotnet/core/install/linux-ubuntu-install?tabs=dotnet8&pivots=os-linux-ubuntu-2204).
 > Use the following instead:
 	
 	sudo apt-get install -y dotnet-sdk-8.0 aspnetcore-runtime-8.0 dotnet-runtime-8.0
