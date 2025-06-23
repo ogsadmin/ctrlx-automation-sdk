@@ -4,7 +4,7 @@ This is the software development kit (SDK) for [ctrlX AUTOMATION](https://www.ct
 
 Browse through the manual via: [ctrlX AUTOMATION Software Development Kit](https://boschrexroth.github.io/ctrlx-automation-sdk)
 
-<span style="color:red">This is a fork with custom changes/fixes, see [https://github.com/boschrexroth/ctrlx-automation-sdk](https://github.com/boschrexroth/ctrlx-automation-sdk) for the original code!</span>
+$${\color{red}This is a fork with custom changes/fixes, see [https://github.com/boschrexroth/ctrlx-automation-sdk](https://github.com/boschrexroth/ctrlx-automation-sdk) for the original code!}$$
 
 ## Installation of the App Build Environment
 
@@ -18,7 +18,7 @@ If your ctrlX App Build Environment is running, you can log in and install the c
 
 __These installation steps are required on both an App Build Environment and an Ubuntu Server or Desktop System.__
 
-<span style="color:red">The following instructions seem to only only work, if the commands are executed from the users root folder (`/home/boschrexroth/`)! Do not install in a subfolder, else the datalayer .deb package install fails.</span>
+$${\color{red}The following instructions seem to only only work, if the commands are executed from the users root folder (`/home/boschrexroth/`)! Do not install in a subfolder, else the datalayer .deb package install fails.}$$
 
 ### Clone and Install the ctrlX AUTOMATION SDK
 
@@ -28,7 +28,7 @@ Start a console session, change to your destination directory and enter:
 
 As a result, your local copy of the github repo is stored within the directory __ctrlx-automation-sdk/__
 
-<span style="color:red">NOTE: The script will ask for the github tag to use for installing - enter the version as shown in the list, e.g. `2.6.7`, then hit enter (also for the next question)</span> 
+$${\color{red}NOTE: The script will ask for the github tag to use for installing - enter the version as shown in the list, e.g. `2.6.7`, then hit enter (also for the next question)}$$
 
 ### Install required Debian packages
 
