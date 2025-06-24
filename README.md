@@ -78,7 +78,7 @@ For .NET samples (**MIGHT NEED TO REINSTALL DOTNET AS SHOWN ABOVE**):
 
 	install-dotnet-sdk.sh
 
-> [!INFO]
+> [!TIP]
 > The [hard to find DotNET class library documentation](https://apps.boschrexroth.com/docs/ctrlx/csharp/html/files.html)
 >
 > The [official .NET Apps @ctrlX documentation](https://boschrexroth.github.io/ctrlx-automation-sdk/latest/dotnet.html)
