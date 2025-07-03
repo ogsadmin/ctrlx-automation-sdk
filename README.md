@@ -78,6 +78,12 @@ For .NET samples (**MIGHT NEED TO REINSTALL DOTNET AS SHOWN ABOVE**):
 
 	install-dotnet-sdk.sh
 
+> [!NOTE]
+> To develop on windows and linux in parallel, make sure to delete the `nuget.config` file from the C# samples (this is not used by VS2022 and VSCode/dotnet correctly resolves the packages references (nowadays) correctly anyway). 
+>
+> To use the datalyer on windows, make sure to download/install the OpenSSH libraries.
+
+
 > [!TIP]
 > The [hard to find DotNET class library documentation](https://apps.boschrexroth.com/docs/ctrlx/csharp/html/files.html)
 >
