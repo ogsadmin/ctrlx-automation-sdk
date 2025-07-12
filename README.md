@@ -12,6 +12,27 @@ Browse through the manual via: [ctrlX AUTOMATION Software Development Kit](https
 >
 > A good source of information is the [ctrlx-automation-sdk/blob/main/scripts/environment/cloud-config](https://github.com/ogsadmin/ctrlx-automation-sdk/blob/main/scripts/environment/cloud-config) file in the repo, check additionally (e.g. for the list of packages to install).
 
+## Bugs and known issues
+
+This section is relevant for SDK V3.6 and OS version V3.6.1 (automation core V3.6.1).
+
+- App application data cleanup
+
+  Uninstalling an application does not correctly clean up the application data folder at `/var/snap/rexroth-solutions/common/solutions/DefaultSolution/configurations/appdata/<appname>`. If the layout of the app data changes (or some mistake happens during development), then this must be deleted manually. 
+
+## Hints
+
+The following might come in handy to debug your snaps on a physical device:
+
+- Request root access to the CtrlX device: 
+- Show the snap logs:
+	- connect over ssh and run `snap logs <snapname> -f` to get realtime logs
+	- configure syslog and point to your syslog collector
+- Run an interactive shell inside the snap container:
+	1. ssh into the device
+	2. run `snap run --shell <snapname>` 
+	
+
 ## Installation of the App Build Environment
 
 __To develop ctrlX Apps we recommend to use a ctrlX App Build Environment.__ Otherwise a Ubuntu Server or Desktop system is needed.
