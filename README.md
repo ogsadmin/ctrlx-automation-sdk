@@ -16,10 +16,6 @@ Browse through the manual via: [ctrlX AUTOMATION Software Development Kit](https
 
 This section is relevant for SDK V3.6 and OS version V3.6.1 (automation core V3.6.1).
 
-- App application data cleanup
-
-  Uninstalling an application does not correctly clean up the application data folder at `/var/snap/rexroth-solutions/common/solutions/DefaultSolution/configurations/appdata/<appname>`. If the layout of the app data changes (or some mistake happens during development), then this must be deleted manually. 
-
 ## Hints
 
 The following might come in handy to debug your snaps on a physical device:
@@ -32,6 +28,9 @@ The following might come in handy to debug your snaps on a physical device:
 	1. ssh into the device
 	2. run `snap run --shell <snapname>` 
 	
+- App application data cleanup
+
+  Uninstalling an application does not clean up the application data folder at `/var/snap/rexroth-solutions/common/solutions/DefaultSolution/configurations/appdata/<appname>`. If the layout of the app data changes (or some mistake happens during development), then this must be deleted manually. 
 
 ## Installation of the App Build Environment
 
@@ -47,6 +46,13 @@ __These installation steps are required on both an App Build Environment and an 
 
 > [!NOTE]  
 > The following instructions seem to only only work, if the commands are executed from the users root folder (`/home/boschrexroth/`)! Do not install in a subfolder, else the datalayer .deb package install fails.
+
+> [!NOTE]  
+> Snapcraft uses LXC-containers managed through `lxd`. By default this requires root access (sudo) for building. To fix this, add your user to the `lxd` group as follows
+>
+>   sudo usermod -a -G lxd $USER
+>
+> Then you can remove the `sudo` calls in the samples build scripts.
 
 ### Clone and Install the ctrlX AUTOMATION SDK
 
